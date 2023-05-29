@@ -22,9 +22,25 @@ public class SeleccionServiceImpl implements SeleccionService {
 	}
 
 	@Override
-	public Seleccion getSeleccion(int id) {
+	public Seleccion getSeleccionByID(int id) {
 		// TODO Auto-generated method stub
 		return repo.findById(id).get();
 	}
+
+	@Override
+	public Seleccion actualizarSeleccion(Seleccion seleccion) {
+		// TODO Auto-generated method stub
+		return repo.save(seleccion);
+	}
+	@Override
+	public void eliminarSeleccion(int id) {
+		// TODO Auto-generated method stub
+		 repo.deleteById(id);
+	}
+	
+	
+
+
+
 
 }

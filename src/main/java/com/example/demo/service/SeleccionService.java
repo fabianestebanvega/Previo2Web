@@ -11,7 +11,16 @@ public interface SeleccionService {
 	
 	public Seleccion saveSeleccion(Seleccion selecion);
 	
-	public Seleccion getSeleccion(int id);
+	public Seleccion getSeleccionByID(int id);
+	
+	public Seleccion actualizarSeleccion(Seleccion estudiante);
+	
+	
+	public void eliminarSeleccion(int id);
+
+
+	
+	
 	
 	
 
